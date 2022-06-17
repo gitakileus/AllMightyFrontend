@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.jtp {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 81.2px;
+  line-height: 138.5%;
+  /* or 112px */
+
+  letter-spacing: 0.1em;
+
+  font-size: 81.2px;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #be50e5;
+  -webkit-text-fill-color: transparent;
+}
