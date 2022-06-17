@@ -3,14 +3,14 @@
 @tailwind utilities;
 
 .jtp {
-  font-family: 'Poppins';
+  font-family: sans-serif;
   font-style: normal;
   font-weight: 800;
-  font-size: 81.2px;
+  font-size: 181.2px;
   line-height: 138.5%;
   /* or 112px */
 
-  letter-spacing: 0.1em;
+  letter-spacing: 0.05em;
 
   font-size: 81.2px;
   -webkit-text-stroke-width: 2px;

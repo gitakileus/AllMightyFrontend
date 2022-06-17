@@ -11,17 +11,21 @@ import caroselData from '../utils/CaroselData.json'
 import memberData from '../utils/Members.json'
 import faq from '../utils/FAQ.json'
 
+// import css file
+import './style.css'
+
 export default function Landing() {
   return (
     <MintingLayout>
       <Navbar />
       {/* banner section */}
       <section className='flex flex-wrap flex-around bg-[#141420] px-[200px] py-[92px] overflow-hidden'>
-        <div className='text-white flex-1 w-50'>
+        <div className='text-white flex-1 w-50 z-[1]'>
             <img src='/assets/image/ethereum.webp' alt='ethereum' className='w-[55px] h-[83px]' />
             <p className='font-[300] text-[40.2px] font-["Poppins"]'>MINT YOUR RUPIN</p>
+            
             <p className='jtp'>ALMTY NFT</p>
-            <div className='rounded-[30px] border-[#BE50E5] border-[1px] w-fit mt-[31px]'>
+            <div className='gradient-border transition duration-500 ease-in-out rounded-[30px] hover:cursor-pointer border-[#BE50E5] border-[1px] w-fit mt-[31px]'>
               <div className='flex items-center mx-[25px] my-[15px]'>
                 <img src='/assets/image/wallet.webp'className='w-[30px] h-[30px]'/>
                 <p className='font-[400] text-[25px] ml-[5px]'>Connect the wallet</p>
@@ -36,10 +40,10 @@ export default function Landing() {
             </div>
             <div className='absolute ml-[530px] -mt-[20px] -z-10 w-[164px] h-[164px] bg-[#5F127C] blur-[150px]'>
             </div>
-            <img src='/assets/image/bubble.webp' alt='bubble first' className='absolute -right-[100px] bottom-[10px] w-[70px] h-[70px]'/>
+            <img src='/assets/image/bubble.webp' alt='bubble first' className='absolute animate-bounce transition-y-[100px] -right-[100px] bottom-[10px] w-[70px] h-[70px]'/>
             <img src='/assets/image/bubble.webp' alt='bubble second' className='absolute left-[20px] -bottom-[40px] w-[50px] h-[50px]'/>
             <img src='/assets/image/bubble.webp' alt='bubble third' className='absolute -left-[70px] top-[80px] w-[17px] h-[17px]'/>
-            <img src='/assets/image/ring.webp' alt='rigng' className='absolute -right-[70px] top-[0px] w-[55px] h-[55px]'/>
+            <img src='/assets/image/ring.webp' alt='rigng' className='absolute  -right-[70px] top-[0px] w-[55px] h-[55px]'/>
           </div>
         </div>
       </section>
@@ -49,7 +53,8 @@ export default function Landing() {
           <p className='text-[#BE50E5] font-[700] text-[48px] font-["Poppins"]'>Lupin Collectibles</p>
         </div>
         <Carousel Images={caroselData}/>
-        <div className='mt-[64px] bg-[#212136] border-[#393965] border-[1px] rounded-[30px]'>
+
+        <div className='group flex justify-center items-center relative cursor-pointer mt-[64px] bg-[#212136] border-[#393965] border-[1px] rounded-[30px]'>
           <div className='text-[#CAA0FF] text-center px-[85px] pt-[43px] pb-[25px] font-[400] text-[18px] font-["Poppins"]'>
             <p>
               The Lupin Allmighty NFT is a collection of 3,333 generative images of our brands mascot Lupin Allmighty. 
@@ -58,7 +63,9 @@ export default function Landing() {
               This NFT collection doubles as a membership card offering exclusive access to events and more for members. With a chance for users to win free items. Let’s see who can add Lupin to their collection. 
             </p>
           </div>
+          <span className="absolute top-0 -inset-full h-full w-1/2 z-5 block transform -skew-x-12 bg-gradient-to-r from-transparent to-white opacity-40 group-hover:animate-shine"></span>
         </div>
+        
       </section>
       {/* roadmap section */}
       <section className='pt-[69px] pb-[60px] pl-[349px] pr-[273px] bg-[url("resources/roadmap-back.png")] bg-[#141420] .bg-opacity-25 backdrop-blur-[4px]'>
