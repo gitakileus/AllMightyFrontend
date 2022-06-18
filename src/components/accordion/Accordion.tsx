@@ -15,14 +15,14 @@ const Accordion: React.FC<AccordionProps> = ({ title, content }) => {
   function toggleAccordion() {
     setActive((prevState) => !prevState)
     // @ts-ignore
-    setHeight(active ? '0px' : `${contentSpace.current.scrollHeight + 50}px`)
+    setHeight(active ? '0px' : `${contentSpace.current.scrollHeight * 2 + 30}px`)
     setRotate(active ? 'transform duration-700 ease' : 'transform duration-700 ease rotate-180')
   }
 
   return (
     <div className="flex flex-col">
       <button
-        className="my-[6px] h-[68px] rounded-[50px] pr-[13px] pl-[41px] box-border appearance-none cursor-pointer focus:outline-none flex items-center justify-between bg-gradient-to-b from-[#BA4EE1] to-[#661882] "
+        className="my-[6px] min-h-[68px] rounded-[50px] pr-[13px] pl-[41px] box-border appearance-none cursor-pointer focus:outline-none flex items-center justify-between bg-gradient-to-b from-[#BA4EE1] to-[#661882] "
         onClick={toggleAccordion}
       >
         <p className="font-['Poppins'] font-[600] text-[27px] inline-block text-footnote light text-[#fff]">{title}</p>
@@ -35,9 +35,10 @@ const Accordion: React.FC<AccordionProps> = ({ title, content }) => {
       <div
         ref={contentSpace}
         style={{ height: `${height}` }}
-        className="overflow-hidden transition-min-height duration-700 ease-in-out flex items-center pl-[41px]"
+        className="overflow-hidden duration-700 ease-in-out flex items-center pl-[41px]"
       > 
-        <div className="text-[#fff] font-['Poppins'] font-[300] text-[22px]">{content}</div>
+      {/* @ts-ignore */}
+        <div className="text-[#fff] font-['Poppins'] font-[300] text-[22px]"><div dangerouslySetInnerHTML={{__html: content}}/></div>
       </div>
     </div>
   )
