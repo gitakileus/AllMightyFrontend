@@ -22,7 +22,7 @@ const Accordion: React.FC<AccordionProps> = ({ title, content }) => {
   return (
     <div className="flex flex-col">
       <button
-        className="my-[6px] min-h-[68px] rounded-[50px] pr-[13px] pl-[41px] box-border appearance-none cursor-pointer focus:outline-none flex items-center justify-between bg-gradient-to-b from-[#BA4EE1] to-[#661882] "
+        className="z-[1] my-[6px] min-h-[68px] rounded-[50px] pr-[13px] pl-[41px] box-border appearance-none cursor-pointer focus:outline-none flex items-center justify-between bg-gradient-to-b from-[#BA4EE1] to-[#661882] "
         onClick={toggleAccordion}
       >
         <p className="font-['Poppins'] font-[600] text-[27px] inline-block text-footnote light text-[#fff]">{title}</p>

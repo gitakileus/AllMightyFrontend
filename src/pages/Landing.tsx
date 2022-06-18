@@ -18,13 +18,24 @@ import '../components/navbar/style.css'
 export default function Landing() {
   return (
     <MintingLayout>
+      {/* falling start */}
+      <section className='star'>
+        <div>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+    </section>
       <Navbar />
       {/* banner section */}
-      <section className='flex flex-wrap flex-around bg-[#141420] px-[150px] lg:px-[200px] py-[92px] overflow-hidden'>
-        <div className='text-white flex-1 w-50 z-[1]'>
+      <section className='flex flex-wrap flex-around bg-[#141420] md:px-[150px] lg:px-[200px] py-[92px] overflow-hidden'>
+        <div className='text-white w-50 z-[1] flex flex-col justify-center pl-8 md:px-0'>
             <img src='/assets/image/ethereum.webp' alt='ethereum' className='w-[55px] h-[83px]' />
             <p className='font-[300] text-[40.2px] font-["Poppins"]'>MINT YOUR RUPIN</p>
-            
             <p className='jtp min-w-[600px]'>ALMTY NFT</p>
             <div className='gradient-border transition duration-500 ease-in-out rounded-[30px] hover:cursor-pointer border-[#BE50E5] border-[1px] w-fit mt-[31px]'>
               <div className='flex items-center mx-[25px] my-[15px]'>
@@ -55,7 +66,7 @@ export default function Landing() {
         </div>
         <Carousel Images={caroselData}/>
 
-        <div className='group flex justify-center items-center relative cursor-pointer mt-[64px] bg-[#212136] border-[#393965] border-[1px] rounded-[30px] overflow-hidden'>
+        <div className='group flex justify-center items-center relative cursor-pointer mt-[64px] bg-[#212136] border-[#393965] border-[1px] rounded-[30px] overflow-hidden backdrop-opacity-0'>
           <div className='text-[#CAA0FF] text-center px-[85px] pt-[43px] pb-[25px] font-[400] text-[18px] font-["Poppins"]'>
             <p>
               The Lupin Allmighty NFT is a collection of 3,333 generative images of our brands mascot Lupin Allmighty. 
@@ -67,50 +78,94 @@ export default function Landing() {
           <span className="absolute top-0 -inset-full h-full w-1/2 z-5 block transform -skew-x-12 bg-gradient-to-r from-transparent to-white opacity-40 group-hover:animate-shine"></span>
         </div>
         
-      </section>
+      </section>      
       {/* roadmap section */}
-      <section className='pt-[69px] pb-[60px] pl-[349px] pr-[273px] bg-[url("resources/roadmap-back.png")] bg-[#141420] .bg-opacity-25 backdrop-blur-[4px]'>
+      <section className='pt-[69px] pb-[150px] xl:pb-0 xl:-mb-[100px] pl-[73px] md:pl-[149px] lg:pl-[249px] xl:pl-[349px] pr-[73px] lg:pr-[173px] xl:pr-[273px] bg-[url("resources/roadmap-back.png")] bg-[#141420] .bg-opacity-25'>
         <p className='font-[700] text-[40px] font-["Poppins"] text-[#BE50E5] text-center'>The RoadMap</p>
-        <div className='mt-[257px] relative'>
-          <img src='assets/image/line1.webp' className='w-[222px] h-[258px] ml-[373px]'/>
 
-          <div className='absolute w-[373px] h-[373px] border-[5px] border-[#fff] rounded-full bg-gradient-to-b from-[#BE50E5] to-[#5B1175] flex items-center -translate-y-[120%] left-0'>
-            <p className='text-[#fff] text-center  font-[500] text-[26px] font-["Poppins"] px-[54px]'>Develop illustration style and generative script</p>
-            <div className='absolute w-[82px] h-[82px] bg-[#fff] rounded-full right-0 translate-x-1/2'>
+        <div className="space-y-[100px] md:space-y-0 md:grid md:grid-cols-5 md:auto-rows-[1fr] mt-[150px] relative">
+
+          <div className="row-start-1 row-span-2 col-start-1 col-span-2">
+            <div className='relative w-full pt-[100%] border-[5px] border-[#fff] rounded-full bg-gradient-to-b from-[#BE50E5] to-[#5B1175] flex items-center'>
+              <div className='absolute top-0 left-0 right-0 bottom-0 text-center rounded-full'>
+              <div className="quote-wrapper">
+                <blockquote className="text">
+                  <p>Develop illustration style and generative script</p>
+                </blockquote>
+              </div>
+              <p className='text-[#fff] font-[500] text-[26px] font-["Poppins"]'></p>
+            </div>
+            <div className='absolute w-[82px] h-[82px] bg-[#fff] rounded-full bottom-0 md:bottom-auto left-1/2 md:left-auto md:top-1/2 -translate-x-1/2 translate-y-1/2 md:-translate-y-1/2 md:right-0 md:translate-x-1/2'>
               <div className='w-full h-full flex items-center justify-center'>
                 <img src='assets/image/pen.webp' className='w-[54px] h-[54px]'/>
               </div>
             </div>
-          </div>
-
-          <div className='absolute w-[373px] h-[373px] border-[5px] border-[#fff] rounded-full bg-gradient-to-b from-[#48BA2E] to-[#278412] flex items-center justify-center top-[69px] left-[595px]'>
-            <p className='text-[#fff] text-center  font-[500] text-[26px] font-["Poppins"] px-[54px]'>Promote Social Media accounts and website</p>
-            <div className='absolute w-[82px] h-[82px] bg-[#fff] rounded-full bottom-0 translate-y-1/2'>
-              <div className='w-full h-full flex items-center justify-center'>
-                <img src='assets/image/broad.webp' className='w-[54px] h-[54px]'/>
-              </div>
             </div>
           </div>
 
-          <img src='assets/image/line2.webp' className='w-[354px] h-[240px] mt-[190px] ml-[425px]'/>
+          <div className="hidden xl:block row-start-2 row-span-2 col-start-3 col-span-1">
+            <img src='assets/image/line1.webp' className='w-full max-h-[258px]'/>
+          </div>
 
-          <div className='relative z-10 w-[373px] h-[373px] border-[5px] border-[#fff] rounded-full bg-gradient-to-b from-[#594AFF] to-[#1609B0] flex items-center justify-center -translate-y-[52%] ml-[55px]'>
-            <p className='text-[#fff] text-center  font-[500] text-[26px] font-["Poppins"] px-[54px]'>Organize and verify IPFS metadata</p>
-            <div className=' absolute w-[82px] h-[82px] bg-[#fff] rounded-full bottom-0 translate-y-1/2'>
+          <div className="row-start-3 row-span-2 col-start-4 col-span-2">
+            <div className='relative w-full pt-[100%] border-[5px] border-[#fff] rounded-full bg-gradient-to-b from-[#48BA2E] to-[#278412] flex items-center xl:-mt-[200px]'>
+            <div className='absolute top-0 left-0 right-0 bottom-0 text-center rounded-full'>
+              <div className="quote-wrapper">
+                <blockquote className="text">
+                  <p>Promote Social Media accounts and website</p>
+                </blockquote>
+              </div>
+              <p className='text-[#fff] font-[500] text-[26px] font-["Poppins"]'></p>
+            </div>
+            <div className='absolute w-[82px] h-[82px] bg-[#fff] rounded-full bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2'>
+              <div className='w-full h-full flex items-center justify-center'>
+                <img src='assets/image/broad.webp' className='max-w-[54px] max-h-[54px] w-full h-auto'/>
+              </div>
+            </div>
+            </div>
+          </div>
+
+          <div className="hidden xl:block row-start-5 row-span-1 col-start-3 col-span-2">
+            <img src='assets/image/line2.webp' className='w-full max-h-[240px] -mt-[220px]'/>
+          </div>
+
+          <div className="row-start-5 row-span-2  col-start-1 col-span-2">
+            <div className='relative w-full pt-[100%] border-[5px] border-[#fff] rounded-full bg-gradient-to-b from-[#594AFF] to-[#1609B0] flex items-center xl:-mt-[220px]'>
+              <div className='absolute top-0 left-0 right-0 bottom-0 text-center rounded-full'>
+              <div className="quote-wrapper">
+                <blockquote className="text">
+                  <p>Organize and verify IPFS metadata</p>
+                </blockquote>
+              </div>
+              <p className='text-[#fff] font-[500] text-[26px] font-["Poppins"]'></p>
+            </div>
+            <div className='absolute w-[82px] h-[82px] bg-[#fff] rounded-full  bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2'>
               <div className='w-full h-full flex items-center justify-center'>
                 <img src='assets/image/file.webp' className='w-[54px] h-[54px]'/>
               </div>
             </div>
+            </div>
           </div>
 
-          <img src='assets/image/line3.webp' className='absolute w-[355px] h-[355px] ml-[235px] top-[880px]'/>
+          <div className="hidden xl:block row-start-7 row-span-2 col-start-2 col-span-2">
+            <img src='assets/image/line3.webp' className='w-full max-h-[355px] -mt-[190px]'/>
+          </div>
 
-          <div className='relative w-[373px] h-[373px] border-[5px] border-[#fff] rounded-full bg-gradient-to-b from-[#DF494A] to-[#790E0F] flex items-center justify-center left-[595px] right-0 -top-[25px]'>
-            <p className='text-[#fff] text-center  font-[500] text-[26px] font-["Poppins"] px-[54px]'>Announce details on mint</p>
-            <div className='absolute w-[82px] h-[82px] bg-[#fff] rounded-full bottom-0 translate-y-1/2'>
-              <div className='w-full h-full flex items-center justify-center'>
-                <img src='assets/image/voice.webp' className='w-[54px] h-[54px]'/>
+          <div className="row-start-7 xl:row-start-[8] row-span-2 col-start-4 col-span-2">
+            <div className='relative w-full pt-[100%] border-[5px] border-[#fff] rounded-full bg-gradient-to-b from-[#DF494A] to-[#790E0F] flex items-center xl:-mt-[300px]'>
+            <div className='absolute top-0 left-0 right-0 bottom-0 text-center rounded-full'>
+              <div className="quote-wrapper">
+                <blockquote className="text">
+                  <p>Announce details on mint</p>
+                </blockquote>
               </div>
+              <p className='text-[#fff] font-[500] text-[26px] font-["Poppins"]'></p>
+            </div>
+            <div className='absolute w-[82px] h-[82px] bg-[#fff] rounded-full bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2'>
+              <div className='w-full h-full flex items-center justify-center'>
+                <img src='assets/image/voice.webp' className='max-w-[54px] max-h-[54px] w-full h-auto'/>
+              </div>
+            </div>
             </div>
           </div>
 

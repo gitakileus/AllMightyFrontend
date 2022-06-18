@@ -7,7 +7,7 @@ const Navbar = () => {
         <div className='mt-[20px] lg:mt-0'>
           <label className='font-[800] text-[26px] font-["Poppins"] cursor-pointer'>LUPIN ALMTY</label>
         </div>
-        <div className='lg:ml-auto flex flex-wrap space-x-[20px] lg:space-x-[96px] items-center text-[17px] font-[500] font-["Poppins"]'>
+        <div className='z-[1] lg:ml-auto flex flex-wrap space-x-[20px] lg:space-x-[96px] items-center text-[17px] font-[500] font-["Poppins"]'>
           <label className='hover:text-[#ccc] cursor-pointer transition duration-300 ease-in-out'>About us</label>
           <label className='hover:text-[#ccc] cursor-pointer transition duration-300 ease-in-out'>Shop</label>
           <label className='hover:text-[#ccc] cursor-pointer transition duration-300 ease-in-out'>FAQ</label>
