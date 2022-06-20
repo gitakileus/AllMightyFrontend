@@ -1,5 +1,7 @@
 import Navbar from '../components/navbar'
 import MintingLayout from '../layouts/MintingLayout'
+import { useEthers, useEtherBalance } from '@usedapp/core'
+import { BigNumber, ethers } from 'ethers'
 
 //  imort component
 import Carousel from '../components/carousel'
@@ -16,6 +18,14 @@ import './style.css'
 import '../components/navbar/style.css'
 
 export default function Landing() {
+  const { activateBrowserWallet, deactivate, account } = useEthers()
+  const userBalance = useEtherBalance(account)
+
+  console.log(
+    'ethBalance: ',
+    ethers.utils.formatEther(userBalance || BigNumber.from(0)),
+  )
+
   return (
     <MintingLayout>
       {/* falling start */}
@@ -38,10 +48,18 @@ export default function Landing() {
             <p className='font-[300] text-[40.2px] font-["Poppins"]'>MINT YOUR RUPIN</p>
             <p className='jtp min-w-[600px]'>ALMTY NFT</p>
             <div className='gradient-border transition duration-500 ease-in-out rounded-[30px] hover:cursor-pointer border-[#BE50E5] border-[1px] w-fit mt-[31px]'>
-              <div className='flex items-center mx-[25px] my-[15px]'>
+              {!account && (
+              <div className='flex items-center mx-[25px] my-[15px]' onClick={activateBrowserWallet}>
                 <img src='/assets/image/wallet.webp'className='w-[30px] h-[30px]'/>
                 <p className='font-[400] text-[25px] ml-[5px]'>Connect the wallet</p>
               </div>
+              )}
+              {account && (
+                <div className='flex items-center mx-[25px] my-[15px]' onClick={activateBrowserWallet}>
+                <img src='/assets/image/wallet.webp'className='w-[30px] h-[30px]'/>
+                <p className='font-[400] text-[25px] ml-[5px]'>Ether balance: {parseFloat(ethers.utils.formatEther(userBalance?.toString() || "0")).toFixed(2)} ETH</p>
+              </div>
+              )}
             </div>
         </div>  
         <div className='-translate-y-[10px] flex justify-center flex-1 w-50 mt-[100px] lg:mt-[30px]'>
