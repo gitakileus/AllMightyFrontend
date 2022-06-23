@@ -43,7 +43,7 @@ const Header = () => {
 
   return (
     <header>
-      <a className='flex' href='https://dashing-starship-c6287d.netlify.app/'>
+      <a className='flex' href='https://allmightyminting.netlify.app/'>
         <img className='w-16' src='assets/images/logo.png' alt='Logo' />
       </a>
       <div className='flex flex-row gap-8'>
