@@ -27,7 +27,7 @@ const Accordion: React.FC<AccordionProps> = ({ title, content }) => {
       >
         <p className="font-['Poppins'] font-[600] text-[27px] inline-block text-footnote light text-[#fff]">{title}</p>
         <img
-          src={`/assets/image/plus.webp`}
+          src={`/assets/images/plus.webp`}
           alt="plus icon"
           className={`${rotate} inline-block w-[42px] h-[42px]`}
         />

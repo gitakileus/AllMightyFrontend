@@ -1,16 +1,16 @@
 [
   {
-    "image": "/assets/image/member1.webp",
+    "image": "/assets/images/member1.webp",
     "role": "The Creator",
     "name": "ALMTY_KAILO"
   },
   {
-    "image": "/assets/image/member2.webp",
+    "image": "/assets/images/member2.webp",
     "role": "The Desiginer",
     "name": "AllenX"
   },
   {
-    "image": "/assets/image/member3.webp",
+    "image": "/assets/images/member3.webp",
     "role": "The Developer",
     "name": "Lucas"
   }

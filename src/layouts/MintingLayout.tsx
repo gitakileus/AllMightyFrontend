@@ -1,5 +1,12 @@
+import Header from 'components/MintHeader';
+import Footer from 'components/MintFooter';
+
 const MintingLayout = (props: MintingType) => {
-  return <div className=''>{props.children}</div>;
+  <div className='app-layout'>
+      <Header />
+      {props.children}
+      <Footer />
+    </div>
 };
 
 interface MintingType {
