@@ -79,7 +79,7 @@ export default function Minting() {
         <div className='content'>
           <div className='mask'>
             <div className='banner'>
-              <h1 className='text-4xl'>Get Your Own CheetahCC NFT</h1>
+              <h1 className='text-4xl'>Get Your Own LUPIN NFT</h1>
               <div className='nft-panel unselectable'>
                 <div className='title'>Amount</div>
                 <div className='nft-counter'>
@@ -117,7 +117,7 @@ export default function Minting() {
                   <div className='flex justify-center gap-2 text-2xl md:text-3xl  items-center'>
                     <FaDiscord />{' '}
                     <CountUp
-                      end={350}
+                      end={800}
                       duration={3}
                       separator=','
                       decimal=','
@@ -132,7 +132,7 @@ export default function Minting() {
                   <div className='flex justify-center gap-2 text-2xl md:text-3xl items-center'>
                     <FaTwitter />{' '}
                     <CountUp
-                      end={680}
+                      end={3500}
                       duration={3}
                       separator=','
                       decimal=','

@@ -1,21 +1,21 @@
-import Navbar from '../../components/navbar'
-import LandingLayout from '../../layouts/LandingLayout'
+import Navbar from 'components/navbar'
+import LandingLayout from 'layouts/LandingLayout'
 import { useEthers, useEtherBalance } from '@usedapp/core'
 import { BigNumber, ethers } from 'ethers'
 
 //  imort component
-import Carousel from '../../components/carousel'
-import Member from '../../components/member'
-import Accordion from '../../components/accordion'
+import Carousel from 'components/carousel'
+import Member from 'components/member'
+import Accordion from 'components/accordion'
 
 // import json file
-import caroselData from '../../utils/CaroselData.json'
-import memberData from '../../utils/Members.json'
-import faq from '../../utils/FAQ.json'
+import caroselData from 'utils/CaroselData.json'
+import memberData from 'utils/Members.json'
+import faq from 'utils/FAQ.json'
 
 // import css file
 import './style.css'
-import '../../components/navbar/style.css'
+import 'components/navbar/style.css'
 
 export default function Landing() {
   const { activateBrowserWallet, deactivate, account } = useEthers()

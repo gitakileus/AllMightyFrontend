@@ -14,7 +14,7 @@ export const useMaxSupply = () => {
     useContractCall({
       abi: ContractInterface,
       address: ContractAddress,
-      method: 'maxSupply',
+      method: 'MAX_SUPPLY',
       args: [],
     }) ?? [];
 
@@ -26,7 +26,7 @@ export const useMaxMintAmountPerTx = () => {
     useContractCall({
       abi: ContractInterface,
       address: ContractAddress,
-      method: 'maxMintAmountPerTx',
+      method: 'MAX_BATCH_SIZE',
       args: [],
     }) ?? [];
 
@@ -38,7 +38,7 @@ export const useCost = () => {
     useContractCall({
       abi: ContractInterface,
       address: ContractAddress,
-      method: 'cost',
+      method: 'MINT_PRICE',
       args: [],
     }) ?? [];
 
@@ -50,7 +50,7 @@ export const usePaused = () => {
     useContractCall({
       abi: ContractInterface,
       address: ContractAddress,
-      method: 'paused',
+      method: 'saleStarted',
       args: [],
     }) ?? [];
 
