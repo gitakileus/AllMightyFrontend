@@ -108,7 +108,12 @@ export default function Landing() {
               <div className='absolute top-0 left-0 right-0 bottom-0 text-center rounded-full'>
               <div className="quote-wrapper">
                 <blockquote className="text">
-                  <p>Develop illustration style and generative script</p>
+                  <p>Create & publish our website and Social media creation
+                    <br/><br/>
+                    Project Layout for future Holders/Investor
+                    <br/><br/>
+                    Create Awesome Arts
+                  </p>
                 </blockquote>
               </div>
               <p className='text-[#fff] font-[500] text-[26px] font-["Poppins"]'></p>
@@ -130,7 +135,10 @@ export default function Landing() {
             <div className='absolute top-0 left-0 right-0 bottom-0 text-center rounded-full'>
               <div className="quote-wrapper">
                 <blockquote className="text">
-                  <p>Promote Social Media accounts and website</p>
+                  <p>Publish White Paper Minting Site Launch
+                    <br/> <br/>
+                    gain access to the Lupin Almighty discord community, where we give access to several benefits .
+                  </p>
                 </blockquote>
               </div>
               <p className='text-[#fff] font-[500] text-[26px] font-["Poppins"]'></p>
@@ -152,7 +160,9 @@ export default function Landing() {
               <div className='absolute top-0 left-0 right-0 bottom-0 text-center rounded-full'>
               <div className="quote-wrapper">
                 <blockquote className="text">
-                  <p>Organize and verify IPFS metadata</p>
+                  <p>Scaling<br/><br/>
+                    offer holders exclusive access to physical merchandise and our collectibles!
+                    offer holders exclusive access to physical merchandise and collectibles!</p>                    
                 </blockquote>
               </div>
               <p className='text-[#fff] font-[500] text-[26px] font-["Poppins"]'></p>
@@ -174,7 +184,10 @@ export default function Landing() {
             <div className='absolute top-0 left-0 right-0 bottom-0 text-center rounded-full'>
               <div className="quote-wrapper">
                 <blockquote className="text">
-                  <p>Announce details on mint</p>
+                  <p>Take – Off To The MetaVerse 🚀
+                    <br/><br/>
+                    Build a new world community that represents themselves and communicates with each other using Lupin.
+                  </p>
                 </blockquote>
               </div>
               <p className='text-[#fff] font-[500] text-[26px] font-["Poppins"]'></p>
