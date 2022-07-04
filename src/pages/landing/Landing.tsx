@@ -106,7 +106,7 @@ export default function Landing() {
           <div className="row-start-1 row-span-2 col-start-1 col-span-2">
             <div className='relative w-full pt-[100%] border-[5px] border-[#fff] rounded-full bg-gradient-to-b from-[#BE50E5] to-[#5B1175] flex items-center'>
               <div className='absolute top-0 left-0 right-0 bottom-0 text-center rounded-full'>
-              <div className="quote-wrapper">
+              <div className="quote-wrapper overflow-hidden">
                 <blockquote className="text">
                   <p>Create & publish our website and Social media creation
                     <br/><br/>
@@ -133,7 +133,7 @@ export default function Landing() {
           <div className="row-start-3 row-span-2 col-start-4 col-span-2">
             <div className='relative w-full pt-[100%] border-[5px] border-[#fff] rounded-full bg-gradient-to-b from-[#48BA2E] to-[#278412] flex items-center xl:-mt-[200px]'>
             <div className='absolute top-0 left-0 right-0 bottom-0 text-center rounded-full'>
-              <div className="quote-wrapper">
+              <div className="quote-wrapper overflow-hidden">
                 <blockquote className="text">
                   <p>Publish White Paper Minting Site Launch
                     <br/> <br/>
@@ -158,7 +158,7 @@ export default function Landing() {
           <div className="row-start-5 row-span-2  col-start-1 col-span-2">
             <div className='relative w-full pt-[100%] border-[5px] border-[#fff] rounded-full bg-gradient-to-b from-[#594AFF] to-[#1609B0] flex items-center xl:-mt-[220px]'>
               <div className='absolute top-0 left-0 right-0 bottom-0 text-center rounded-full'>
-              <div className="quote-wrapper">
+              <div className="quote-wrapper overflow-hidden">
                 <blockquote className="text">
                   <p>Scaling<br/><br/>
                     offer holders exclusive access to physical merchandise and our collectibles!
@@ -182,7 +182,7 @@ export default function Landing() {
           <div className="row-start-7 xl:row-start-[8] row-span-2 col-start-4 col-span-2">
             <div className='relative w-full pt-[100%] border-[5px] border-[#fff] rounded-full bg-gradient-to-b from-[#DF494A] to-[#790E0F] flex items-center xl:-mt-[300px]'>
             <div className='absolute top-0 left-0 right-0 bottom-0 text-center rounded-full'>
-              <div className="quote-wrapper">
+              <div className="quote-wrapper overflow-hidden">
                 <blockquote className="text">
                   <p>Take – Off To The MetaVerse 🚀
                     <br/><br/>
