@@ -1,8 +1,8 @@
-import { ethers } from 'ethers';
-import { Contract } from '@ethersproject/contracts';
-import { useContractCall, useContractFunction } from '@usedapp/core';
-import ContractABI from '../abi/Lupin.json';
-import { ContractAddress } from '../contracts';
+import { ethers } from "ethers";
+import { Contract } from "@ethersproject/contracts";
+import { useContractCall, useContractFunction } from "@usedapp/core";
+import ContractABI from "../abi/Lupin.json";
+import { ContractAddress } from "../contracts";
 
 // @ts-ignore
 const ContractInterface = new ethers.utils.Interface(ContractABI.abi);
@@ -14,7 +14,7 @@ export const useMaxSupply = () => {
     useContractCall({
       abi: ContractInterface,
       address: ContractAddress,
-      method: 'MAX_SUPPLY',
+      method: "MAX_SUPPLY",
       args: [],
     }) ?? [];
 
@@ -26,7 +26,7 @@ export const useMaxMintAmountPerTx = () => {
     useContractCall({
       abi: ContractInterface,
       address: ContractAddress,
-      method: 'MAX_BATCH_SIZE',
+      method: "MAX_BATCH_SIZE",
       args: [],
     }) ?? [];
 
@@ -38,23 +38,35 @@ export const useCost = () => {
     useContractCall({
       abi: ContractInterface,
       address: ContractAddress,
-      method: 'MINT_PRICE',
+      method: "MINT_PRICE",
       args: [],
     }) ?? [];
 
   return cost;
 };
 
-export const usePaused = () => {
-  const [paused] =
+export const useSaleStarted = () => {
+  const [saleStatus] =
     useContractCall({
       abi: ContractInterface,
       address: ContractAddress,
-      method: 'saleStarted',
+      method: "saleStarted",
       args: [],
     }) ?? [];
 
-  return paused;
+  return saleStatus;
+};
+
+export const usePreSaleStarted = () => {
+  const [preSaleStarted] =
+    useContractCall({
+      abi: ContractInterface,
+      address: ContractAddress,
+      method: "preSaleStarted",
+      args: [],
+    }) ?? [];
+
+  return preSaleStarted;
 };
 
 export const useTotalSupply = () => {
@@ -62,7 +74,7 @@ export const useTotalSupply = () => {
     useContractCall({
       abi: ContractInterface,
       address: ContractAddress,
-      method: 'totalSupply',
+      method: "totalSupply",
       args: [],
     }) ?? [];
 
@@ -71,7 +83,18 @@ export const useTotalSupply = () => {
 
 export const useMint = () => {
   // @ts-ignore
-  const { state, send, event } = useContractFunction(NFTContract, 'mint', {});
+  const { state, send, event } = useContractFunction(NFTContract, "mint", {});
+
+  return { state, send, event };
+};
+
+export const useWhiteListMint = () => {
+  // @ts-ignore
+  const { state, send, event } = useContractFunction(
+    NFTContract,
+    "mintWhitelist",
+    {}
+  );
 
   return { state, send, event };
 };
