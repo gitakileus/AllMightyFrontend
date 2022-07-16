@@ -203,7 +203,7 @@ export default function Landing() {
         </div>
       </section>
       {/* The Team section */}
-      <section className='bg-[#171725] px-[90px] xl:px-[220px] pb-[118px]'>
+      <section id="team" className='bg-[#171725] px-[90px] xl:px-[220px] pb-[118px]'>
         <div className='pt-[64px] text-center'>
           <p className='text-[#BE50E5] font-[700] text-[40px] font-["Poppins"]'>The Team</p>
         </div>
@@ -217,7 +217,7 @@ export default function Landing() {
         </div>
       </section>
       {/* FAQ section */}
-      <section className='bg-[#141420] px-[30px] lg:px-[150px] xl:px-[200px]'>
+      <section id="faq" className='bg-[#141420] px-[30px] lg:px-[150px] xl:px-[200px]'>
           <div className='pt-[93px]'>
             <p className='text-center text-[#BE50E5] font-[700] font-["Poppins] text-[40px]'>FAQ</p>
           </div>

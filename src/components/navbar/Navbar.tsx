@@ -10,7 +10,7 @@ const Navbar = () => {
           </label>
         </div>
         <div className='z-[1] lg:ml-auto flex flex-wrap space-x-[20px] lg:space-x-[96px] items-center text-[17px] font-[500] font-["Poppins"]'>
-          <label className="hover:text-[#ccc] cursor-pointer transition duration-300 ease-in-out">
+          <label target="#team" className="hover:text-[#ccc] cursor-pointer transition duration-300 ease-in-out">
             About us
           </label>
           <a
@@ -19,7 +19,7 @@ const Navbar = () => {
           >
             Shop
           </a>
-          <label className="hover:text-[#ccc] cursor-pointer transition duration-300 ease-in-out">
+          <label target="#faq" className="hover:text-[#ccc] cursor-pointer transition duration-300 ease-in-out">
             FAQ
           </label>
         </div>
