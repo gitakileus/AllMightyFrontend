@@ -1,8 +1,10 @@
 import { ethers } from "ethers";
 import { Contract } from "@ethersproject/contracts";
 import { useContractCall, useContractFunction } from "@usedapp/core";
-import ContractABI from "../abi/Lupin.json";
-import { ContractAddress } from "../contracts";
+// @ts-ignore
+import ContractABI from "abi/Lupin.json";
+// @ts-ignore
+import { ContractAddress } from "contracts";
 
 // @ts-ignore
 const ContractInterface = new ethers.utils.Interface(ContractABI.abi);

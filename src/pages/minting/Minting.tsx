@@ -4,7 +4,9 @@ import { toast } from "react-toastify";
 import { utils } from "ethers";
 import { useEthers } from "@usedapp/core";
 import { FaDiscord, FaTwitter } from "react-icons/fa";
+// @ts-ignore
 import { ReactComponent as MinusIcon } from "assets/icons/icon-minus.svg";
+// @ts-ignore
 import { ReactComponent as PlusIcon } from "assets/icons/icon-plus.svg";
 import {
   useTotalSupply,
@@ -100,9 +102,9 @@ export default function Minting() {
               <div className="nft-panel unselectable">
                 <div className="title">Amount</div>
                 <div className="nft-counter">
-                  <MinusIcon onClick={(e) => dispatch("minus")} />
+                  <MinusIcon onClick={(e: any) => dispatch("minus")} />
                   <div className="amount">{state.numberOfToken}</div>
-                  <PlusIcon onClick={(e) => dispatch("plus")} />
+                  <PlusIcon onClick={(e: any) => dispatch("plus")} />
                 </div>
                 <button
                   className="unselectable"
@@ -134,7 +136,7 @@ export default function Minting() {
                   <div className="flex justify-center gap-2 text-2xl md:text-3xl  items-center">
                     <FaDiscord />{" "}
                     <CountUp
-                      end={800}
+                      end={1200}
                       duration={3}
                       separator=","
                       decimal=","
