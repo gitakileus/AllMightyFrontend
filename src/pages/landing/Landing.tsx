@@ -289,9 +289,19 @@ export default function Landing() {
           </div>
         </div>
       </section>
+      {/* About us Section */}
+      <section id="about" className="bg-[#141420] px-[90px] xl:px-[220px] pb-[118px]">
+        <div className="pt-[64px] text-center">
+          <p className='text-[#BE50E5] font-[700] text-[44px] font-["Poppins"]'>
+            About Us
+          </p>
+        </div>
+        <div className="text-white font-['Poppins'] font-[300] text-[26px] text-center my-5">
+          <p>We are ALL | MIGHTY, a brand that focuses on creative expression. From Music, Fashion, and Digital Art, we are seeking to expand our business by focusing on creativity and doing the things we love. We have a passion for this industry and what it could bring in the future. Our brand objectives are based solely on making the world a Healthy and Happier place by simply having Fun. Our main objective are base on Digital Art as an NFT and Web 3.0. We're here to brings you the most Digital experience ever.</p>
+        </div>
+      </section>
       {/* The Team section */}
       <section
-        id="about"
         className="bg-[#171725] px-[90px] xl:px-[220px] pb-[118px]"
       >
         <div className="pt-[64px] text-center">
