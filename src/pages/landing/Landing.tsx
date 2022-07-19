@@ -397,9 +397,17 @@ export default function Landing() {
             </div>
           </div>
         </div>
-        <div className="mt-[16.4px]">
+        <div className="mt-[16.4px] relative">
           <p className='font-[300] font-["Poppins"] text-[16px] text-[#fff] cursor-pointer'>
             © LUPIN ALMTY2022
+          </p>
+          <p className="mt-4">
+            <a href="https://metamask.io/faqs/" target="_blank" className="text-white">
+              Metamask guide
+            </a>
+            <a href="https://www.coinbase.com/wallet/getting-started-extension/" className="text-white ml-5" target="_blank">
+            Coinbase Wallet guide
+            </a>
           </p>
         </div>
       </section>
