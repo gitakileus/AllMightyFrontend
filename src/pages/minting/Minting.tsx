@@ -21,6 +21,7 @@ import {
 import "react-toastify/dist/ReactToastify.css";
 import "./style.css";
 import MintingLayout from "layouts/MintingLayout";
+import getWhiteListInfo from "utils/whitelist";
 
 // @ts-ignore
 export default function Minting() {
@@ -63,7 +64,7 @@ export default function Minting() {
 
     mintState.status === "Exception" && toast.error(mintState.errorMessage);
     mintState.status === "Success" && toast.info("Mint Success!");
-  }, [mintState]);
+  }, [mintState, whiteMintState]);
 
   const handleMint = async () => {
     if (!account) {
@@ -77,6 +78,11 @@ export default function Minting() {
     console.log(saleStarted);
 
     if (preSaleStarted) {
+      const verify = await getWhiteListInfo(window.ethereum.selectedAddress);
+      // if (!verify.verified) {
+      //   toast.warning("You are not a member in whitelist!");
+      //   return;
+      // }
       whiteMint(state.numberOfToken, {
         value: utils.parseEther(ethPrice.toString()),
       });
