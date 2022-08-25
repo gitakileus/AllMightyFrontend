@@ -79,10 +79,10 @@ export default function Minting() {
 
     if (preSaleStarted) {
       const verify = await getWhiteListInfo(window.ethereum.selectedAddress);
-      // if (!verify.verified) {
-      //   toast.warning("You are not a member in whitelist!");
-      //   return;
-      // }
+      if (!verify.verified) {
+        toast.warning("You are not a member in whitelist!");
+        return;
+      }
       whiteMint(state.numberOfToken, {
         value: utils.parseEther(ethPrice.toString()),
       });
