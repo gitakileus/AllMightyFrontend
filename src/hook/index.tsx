@@ -8,6 +8,7 @@ import { ContractAddress } from "contracts";
 
 // @ts-ignore
 const ContractInterface = new ethers.utils.Interface(ContractABI.abi);
+// console.log(ContractInterface)
 
 const NFTContract = new Contract(ContractAddress, ContractInterface);
 

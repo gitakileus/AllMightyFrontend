@@ -2,9 +2,9 @@
 
 export const DEBUG = true;
 export const MAINNET_RPC_URL =
-  "https://mainnet.infura.io/v3/a61a25ae16b34ad2819706fd434d1b3f";
+  "https://mainnet.infura.io/v3/0a639a32ec7345bc87ea49ad0b15b0e6";
 export const TESTNET_RPC_URL =
-  "https://rinkeby.infura.io/v3/a61a25ae16b34ad2819706fd434d1b3f";
+  "https://rinkeby.infura.io/v3/0a639a32ec7345bc87ea49ad0b15b0e6";
 // export const HARDHAT_URL = "http://localhost:8545";
 
 // export const contractAddress = NFT.address;

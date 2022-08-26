@@ -1,18 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+import ReactDOM from "react-dom";
 
-import './index.css';
-import App from './App';
+import "./index.css";
+import App from "./App";
 
-import { Config, DAppProvider } from '@usedapp/core'
-import { NETWORK_ID, RPC_URL } from './config/config'
+import { Config, DAppProvider } from "@usedapp/core";
+import { NETWORK_ID, RPC_URL } from "./config/config";
 
 const config: Config = {
   readOnlyChainId: NETWORK_ID,
   readOnlyUrls: {
     [NETWORK_ID]: RPC_URL,
   },
-}
+};
+
+console.log(RPC_URL);
 
 ReactDOM.render(
   <React.StrictMode>
@@ -20,7 +22,7 @@ ReactDOM.render(
       <App />
     </DAppProvider>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function
